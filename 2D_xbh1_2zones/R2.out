@@ -1,0 +1,34 @@
+
+
+ >> R  2    R e s i s t i v i t y   I n v e r s i o n   v3.3 <<
+
+ >> D a t e : 24 - 10 - 2019
+ >>  Forward model for 15m spaced cross borehole problem in Fig 5.12 of Binley&Kemna
+ >> F o r w a r d   S o l u t i o n   S e l e c t e d <<
+
+ Measurements read:   204     Measurements rejected:     0
+
+ >> Total Memory required is:          0.834 Gb
+
+
+                     Timing Summary
+                     ==============
+     Total time taken:                                 6. s
+     Percent time taken forming element equations:    0.5 %
+     Percent time taken solving forward  equations:  50.3 %
+     Percent time taken forming Jacobian:             0.0 %
+     Percent time taken solving inverse equations:    0.0 %
+     Percent time taken calculating res. matrix:      0.0 %
+
+                     Timing Details
+                     ==============
+     Number of calls to form element equations:        11
+     Average time taken in call:                      0.0 s
+     Number of calls to solve forward equations:      352
+     Average time taken in call:                      0.0 s
+     Number of calls to form Jacobian:                  0
+     Average time taken in call:                      0.0 s
+     Number of calls to solve inverse equations:        0
+     Average time taken in call:                      0.0 s
+     Number of calls to calculate res. matrix:          0
+     Average time taken in call:                      0.0 s

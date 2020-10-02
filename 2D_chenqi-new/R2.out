@@ -1,0 +1,34 @@
+
+
+ >> R  2    R e s i s t i v i t y   I n v e r s i o n   v3.3 <<
+
+ >> D a t e : 21 - 10 - 2019
+ >> 170408                                                                          
+ >> F o r w a r d   S o l u t i o n   S e l e c t e d <<
+
+ Measurements read:  1569     Measurements rejected:     0
+
+ >> Total Memory required is:          0.534 Gb
+
+
+                     Timing Summary
+                     ==============
+     Total time taken:                                 6. s
+     Percent time taken forming element equations:    0.4 %
+     Percent time taken solving forward  equations:  54.1 %
+     Percent time taken forming Jacobian:             0.0 %
+     Percent time taken solving inverse equations:    0.0 %
+     Percent time taken calculating res. matrix:      0.0 %
+
+                     Timing Details
+                     ==============
+     Number of calls to form element equations:        13
+     Average time taken in call:                      0.0 s
+     Number of calls to solve forward equations:      624
+     Average time taken in call:                      0.0 s
+     Number of calls to form Jacobian:                  0
+     Average time taken in call:                      0.0 s
+     Number of calls to solve inverse equations:        0
+     Average time taken in call:                      0.0 s
+     Number of calls to calculate res. matrix:          0
+     Average time taken in call:                      0.0 s
