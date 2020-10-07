@@ -114,7 +114,7 @@ vtk = read_vtk() ;
 % ##          [1./sigma_mean (zone1_prob/300)'] ) ; % add scalar variable to the vtk struct
 
 vtk.scalar_data = [vtk.scalar_data log10(1./sigma_mean) ...
-    sum(zones'==2)'./300 sigma_std' sigma_std'./log10(1./sigma_mean)] ;
+    sum(zones'==2)'./N_En sigma_std' sigma_std'./log10(1./sigma_mean)] ;
 add_list = {"mean log_1_0 resistivity","Zone 2 probability",...
     "std(log_1_0 resistivity in Ohm m)", "CV(log_1_0 resistivity)"} ;
 vtk.scalar_list(end+1:end+numel(add_list)) = add_list; 
