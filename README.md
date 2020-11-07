@@ -1,9 +1,10 @@
 # EKI_geophysics_2020
 Example MATLAB scripts for running ensemble Kalman inversion for electrical resistivity tomography (ERT) data to accompany paper (submitted).
 
-*You must cite:* at the moment, please contact the author. 
-
-
+*You must cite:*
+Chak-Hau Michael Tso, Marco Iglesias, Paul Wilkinson, Oliver Kuras, Jonathan Chambers, Andrew Binley
+"Efficient multi-scale imaging of subsurface resistivity with uncertainty quantification using Ensemble Kalman Inversion"
+(2020+, under revision) Geophysical Journal International 
 
 # Ensemble Kalman inversion (EKI) for geophysics (2D and 3D)
 
