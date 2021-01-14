@@ -3,6 +3,8 @@ Example MATLAB scripts for running ensemble Kalman inversion for electrical resi
 
 [**Now published!!!**](https://academic.oup.com/gji/advance-article/doi/10.1093/gji/ggab013/6081097)
 
+[**Read Preprint**](https://eprints.lancs.ac.uk/id/eprint/150574/)
+
 **You must cite:**
 
 Chak-Hau Michael Tso, Marco Iglesias, Paul Wilkinson, Oliver Kuras, Jonathan Chambers, Andrew Binley
