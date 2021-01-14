@@ -1,0 +1,87 @@
+
+
+ >> R  2    R e s i s t i v i t y   I n v e r s i o n   v3.3 <<
+
+ >> D a t e : 04 - 03 - 2020
+ >> Inverse model for dp-dp survey as in Fig 5.8 of Binley & Kemna(2005)            
+ >> I n v e r s e   S o l u t i o n   S e l e c t e d <<
+ >> R e g u l a r i s e d   T y p e <<
+ >>   L i n e a r    F i l t e r    <<
+ >> L o g - D a t a   I n v e r s i o n <<
+ >> N o r m a l   R e g u l a r i s a t i o n <<
+ >> D a t a   w e i g h t s   w i l l   b e  m o d i f i e d <<
+
+
+ Processing dataset   1
+
+ WARNING:  Rejecting reading   48 P+  15 P-  16 C+   8 C-   9 App Res       304.24
+ WARNING:  Rejecting reading   60 P+  17 P-  18 C+  10 C-  11 App Res       321.19
+ WARNING:  Rejecting reading   66 P+  18 P-  19 C+  11 C-  12 App Res       323.54
+ WARNING:  Rejecting reading   71 P+  18 P-  19 C+  12 C-  13 App Res       301.86
+ WARNING:  Rejecting reading   72 P+  19 P-  20 C+  12 C-  13 App Res       343.79
+ WARNING:  Rejecting reading   77 P+  19 P-  20 C+  13 C-  14 App Res       308.43
+ WARNING:  Rejecting reading   78 P+  20 P-  21 C+  13 C-  14 App Res       357.10
+ WARNING:  Rejecting reading   83 P+  20 P-  21 C+  14 C-  15 App Res       316.98
+ WARNING:  Rejecting reading   84 P+  21 P-  22 C+  14 C-  15 App Res       367.90
+ WARNING:  Rejecting reading   89 P+  21 P-  22 C+  15 C-  16 App Res       305.50
+ WARNING:  Rejecting reading   90 P+  22 P-  23 C+  15 C-  16 App Res       361.81
+ WARNING:  Rejecting reading   95 P+  22 P-  23 C+  16 C-  17 App Res       314.94
+ WARNING:  Rejecting reading   96 P+  23 P-  24 C+  16 C-  17 App Res       356.45
+ WARNING:  Rejecting reading  101 P+  23 P-  24 C+  17 C-  18 App Res       306.92
+ WARNING:  Rejecting reading  102 P+  24 P-  25 C+  17 C-  18 App Res       346.97
+ WARNING:  Rejecting reading  107 P+  24 P-  25 C+  18 C-  19 App Res       303.97
+
+ Measurements read:   101     Measurements rejected:    16
+   Geometric mean of apparent resistivities:  0.24938E+03
+
+ >> Total Memory required is:          2.399 Gb
+
+   Iteration   1
+     Initial RMS Misfit:        45.27     Number of data ignored:     0
+     Alpha:   2795.686   RMS Misfit:        2.65
+     Alpha:   1297.642   RMS Misfit:        2.55
+     Alpha:    602.312   RMS Misfit:        2.40
+     Alpha:    279.569   RMS Misfit:        2.21
+     Alpha:    129.764   RMS Misfit:        1.99
+     Alpha:     60.231   RMS Misfit:        1.77
+     Alpha:     27.957   RMS Misfit:        1.54
+     Alpha:     12.976   RMS Misfit:        1.30
+     Alpha:      6.023   RMS Misfit:        1.09
+     Alpha:      2.796   RMS Misfit:        0.94
+     Step length set to   1.00000
+     Final RMS Misfit:        0.94
+     Step length set to   0.99644
+     Final RMS Misfit:        1.01
+
+ Solution converged - Outputing results to file
+
+ Calculating resolution matrix
+
+
+ Processing dataset   2
+
+
+ End of data:  Terminating
+
+
+                     Timing Summary
+                     ==============
+     Total time taken:                                38. s
+     Percent time taken forming element equations:    0.7 %
+     Percent time taken solving forward  equations:  63.4 %
+     Percent time taken forming Jacobian:             0.3 %
+     Percent time taken solving inverse equations:    0.4 %
+     Percent time taken calculating res. matrix:      8.6 %
+
+                     Timing Details
+                     ==============
+     Number of calls to form element equations:       117
+     Average time taken in call:                      0.0 s
+     Number of calls to solve forward equations:     2925
+     Average time taken in call:                      0.0 s
+     Number of calls to form Jacobian:                  1
+     Average time taken in call:                      0.1 s
+     Number of calls to solve inverse equations:       10
+     Average time taken in call:                      0.0 s
+     Number of calls to calculate res. matrix:          0
+     Average time taken in call:                      0.0 s
