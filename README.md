@@ -10,7 +10,7 @@ Chak-Hau Michael Tso, Marco Iglesias, Paul Wilkinson, Oliver Kuras, Jonathan Cha
 
 This repo documents script files to run Ensemble Kalman inversion with level set parameterization. Its main advantage is to delinate resistvity fields as zones (under uncertainty) at a modest computational cost. There is an option to allow fixing the zonal resistivity values, or allow heterogeniety within each zone.
 
-Download one of the 
+Download one of the example directories to try it out yourself. EAch of them are self-contained.
 
 ### Requirements
 - MATLAB(R) 
@@ -35,39 +35,46 @@ Download one of the
  Name of folder | short description | sruvey type | figure in paper
  ---|---|---|---
 `2D_xbh1_2zones` | rectangular target | cross borehole | Fig. 4
+`2D_fault_2zones` | 2D fault example (2 zone) | surface | Fig. 5c,e,g
+`2D_fault_3zones` | 2D fault example (3 zone) | surface | Fig. 5d,f,h
+`2D_fault_hetero` | 2D fault example (heterogeneous zones) | surface | Fig. 6
 `2D_borth` | Field example of Borth peat in Wales | surface | Fig. 8
 `2D_chenqi-new` | Field example of a karstic hillslope in China | surface | Fig. 9
 `2D_eggborough` | Field example of Eggborough, Yorkshire, UK | surface and cross borehole | Fig. 10
 `3D_shaft` | Synthetic example of mine shaft | surface | Fig. 7
 
 ### `EKI.m`
-- **tuning** : 
-- **tuning** : 
-- **tuning** : 
-- 
+- `get_R2_Grid()` : gets the R2 grid cell centers 
+- **L** and **n**: the extent and discretization of the EKI domain. Only uniform discretization is supported at the moment. 
+- **n_field** : 2 zones or 3 zones
+- **option**: 0=homogeneous zones, 1=heterogeneous zones
+- **noise**: assumed noise data level is important for inversion. No need to add to data if field data is used, but still needs to be specified.
+- **tuning**: obsolete
+
+`sigma_mean=Inversion(R2_Grid,Grid,N_En,Pr,Un,Data,out_file,cond_file,tuning);` is the main inversion command. Everything else is for plotting.
 
 The EKI script here works on a quadrilateral grid that interpolates the grid used in [R2]
 
-### `Set_prior.m`
-- **tuning** : 
-- **tuning** : 
-- **tuning** : 
+### `Tools/Set_prior.m`
+- You will need to specify K(i).mean.lim [i=1,2,3], which is is prior range of log electrical conductivities of each zone. The prior ranges should not overlap. Note that in the 2-zone and 3-zone formulation, zone 1 and 2 are the background zone respectively.
 
 ### Outputs:
+All variables are saved to `Results_*.mat` after each iteration, while the final result is saved to `Results.mat` at convergence.
+`Data.mat` saves a copy of the observed data, while `Un.mat` saved a copy of the prior level sets, both are used during inversion.
+
+The main result you will be interested in `Results.mat` is **sigma**, which is a matrix of N_cells x N_En (N_En is the size of the ensemble and N_cells is the number of finite element cells). The rows are organized in the same order as the vtk mesh, meaning you can simply append a column to the vtk object. From this matrix you can calculate statistics of interest (e.g. mean, standard deviation,zonal probabilities).
 
 
 ### Inversion notes:
 - prior length scales are 7:1 for x:y by default
 
 ### Plotting and analyzing results (2D):
+`vtk_read()` allows you to read a vtk file generate from R2 (only works for R2 vtk format (checked 2021)). A pop-up file select menu will allow you to choose the vtk file to load. Once the vtk file is loaded, other variables can be added to the `vtk` object (must have the length as number of cells in the ERT mesh). Afterwards, you can `plot_vtk_2D()` for plotting, a pop-up window will allow you to select the variable to plot. Not that it applies polyline cropping based on the list of (x,y) coordinates in `polyline.txt`.
 
-
-`vtk_read()` allows you to read a vtk file generate from R2 (not all vtk formats will work).
+See examples in `EKI.m` in each folder. Images were saved manually to the **img** subfolder.
 
 ### Plotting and analyzing results (3D):
-The same idea applies for plotting 3D res
-
-See this help document () to get started.
+The same idea applies for plotting 3D resitivity. However, plotting 3D vtk files are best done with software such as Paraview, VisIt, or PyVista.
 
 ### FAQ:
 
