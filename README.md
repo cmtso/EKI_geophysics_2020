@@ -31,7 +31,7 @@ Download one of the example directories to try it out yourself. EAch of them are
 1. Create forward problem in [R2] by defining a true resistivity model, electrode configuration, and survey design. Make sure it runs without returning erros. Do not allow polyline clipping in `R2.in`. You may set that in `polyline.txt`. Copy the [R2] input files in the working directory.
 1.1 For field problems, make sure you replace `protocol.dat` with field data and comment out the line in `EKI.m`.
 2. Set up the EKI problem by changing `EKI.m`and `Set_prior.m` (see details below)
-3. Run `EKI.m` until the line *`Inversion()`*. This will take several minutes to several hours.
+3. Run `EKI.m` until the line *`Inversion()`*. This will take several minutes to several hours. Forward ERT model runs occur in the folders `MC/<i>`, where <i> is the realization number (so 1:N_en folders). Its content is duplicated from `template` but the resistivity model is replaced as the inversion progresses. You may need to create an empty `MC` directory at the top level before calling *`Inversion()`*
 4. To process and plot the results, run the remainder of `EKI.m` as appropriate, which calls helper functions `vtk_read()` and `plot_vtk_2D()`.
 
 
