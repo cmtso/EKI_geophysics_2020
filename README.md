@@ -11,6 +11,7 @@ Chak-Hau Michael Tso, Marco Iglesias, Paul Wilkinson, Oliver Kuras, Jonathan Cha
 "Efficient multi-scale imaging of subsurface resistivity with uncertainty quantification using Ensemble Kalman Inversion"
 (2021) *Geophysical Journal International*, ggab013, https://doi.org/10.1093/gji/ggab013
 
+[![DOI](https://zenodo.org/badge/300328525.svg)](https://zenodo.org/badge/latestdoi/300328525)
 
 # Ensemble Kalman inversion (EKI) for geophysics (2D and 3D)
 
