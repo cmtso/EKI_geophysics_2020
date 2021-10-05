@@ -30,7 +30,7 @@ Download one of the example directories to try it out yourself. EAch of them are
   - Make sure you download the R2.exe executable and copy it to each of the `2D_XX` folders. 
   - For Mac OS/Linux machine: You will need to install [wine]. See more specific instructions below.
 - 3D problems: 
-  - ERT forward modelling is run by [E4D] to allow . Make sure you install the [E4D development version]. Unfortunately it only runs for Linux systems. You may try using [cygwin] or the Windows 10 Linux subsystem to run it on Windows systems.
+  - ERT forward modelling is run by [E4D] to allow parallel computing. Make sure you install the [E4D development version]. Unfortunately it only runs for Linux systems. You may try using [cygwin] or the Windows 10 Linux subsystem to run it on Windows systems.
 
 ### General steps
 1. Create forward problem in [R2] by defining a true resistivity model, electrode configuration, and survey design. Make sure it runs without returning erros. Do not allow polyline clipping in `R2.in`. You may set that in `polyline.txt`. Copy the [R2] input files in the working directory.
