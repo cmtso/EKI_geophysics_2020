@@ -33,7 +33,7 @@ n=[64,64]; %number of cells for the discretisation of L (for random fields)
 
 plot(R2_Grid.x,R2_Grid.y,'o')
 hold on, rectangle('Position',[-L(1)/2+trn(1) -L(2)/2+trn(2) L(1) L(2)],'EdgeColor','r'), hold off
-title('R2 cell centres and EKI domain (rectangle')
+title('R2 cell centres and EKI domain (rectangle)')
 
 Grid=Set_Grid(n,L);
 
