@@ -31,6 +31,10 @@ L=[16,16]; %dimensions of the 2D domain where we wish to recover conductivity
 
 n=[64,64]; %number of cells for the discretisation of L (for random fields) 
 
+plot(R2_Grid.x,R2_Grid.y,'o')
+hold on, rectangle('Position',[-L(1)/2+trn(1) -L(2)/2+trn(2) L(1) L(2)],'EdgeColor','r'), hold off
+title('R2 cell centres and EKI domain (rectangle')
+
 Grid=Set_Grid(n,L);
 
 option=0; %option=1 for variable lengthscale and option=0 for constant lengthscale
