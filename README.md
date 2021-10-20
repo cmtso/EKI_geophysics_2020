@@ -28,7 +28,7 @@ Download one of the example directories to try it out yourself. EAch of them are
 - 2D problems:
   - The ERT fro. 
   - Make sure you download the R2.exe executable and copy it to each of the `2D_XX` folders. 
-  - For Mac OS/Linux machine: You will need to install [wine]. See more specific instructions below.
+  - For Mac OS/Linux machine: You will need to install [wine]. See more specific instructions below. (The command would either be `system('wine64 ../../R2.exe');` or `system('wine ../../R2.exe');` in the file `Tools/Inversion.m`)
 - 3D problems: 
   - ERT forward modelling is run by [E4D] to allow parallel computing. Make sure you install the [E4D development version]. Unfortunately it only runs for Linux systems. You may try using [cygwin] or the Windows 10 Linux subsystem to run it on Windows systems.
 
